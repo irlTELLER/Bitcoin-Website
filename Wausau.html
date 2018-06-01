@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<title>Wausau's Activity Decider</title>
+				<meta charset="UTF-8">
+				<meta name="description" content="This website is mean to give options of places to eat and enertainment, based on the season.">
+				<meta name="keywords" content="Wausau, entertainment, food, decision-maker">
+				<meta name="author" content="Jacob Haimerl">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="stylesheet" type="text/css" href="Wausau.css">
+				<script src="Wausau.js"></script>
+		</head>
+		<body>
+			<div class="web">
+				<!-- Header /-->
+				<h1 class="header"><img src="wausaulogo.png" style="width:100;height:100;float:right;"> Wausau's <br>"What is There To Do?" <br>  Decider</h1>
+						<!-- Description /-->
+						<p class="description">This website is meant for indecisive people who need help finding food or things to do.</p>
+						
+						<!-- First Entry /--> 
+						<p class="entry">Enter the city you would like to visit: (Rib Mountain, Rothschild, Weston, Scholfield, Wausau, All)</p>
+						<input class="option" list="City">
+						<datalist id="City">
+							<option value="All">
+							<option value="Rib Mountain">
+							<option value="Rothschild">
+							<option value="Scholfield">
+							<option value="Wausau">
+							<option value="Weston">
+						</datalist>
+						
+						<p class="entry">Enter your age range: (under 18, 18-20, 21 and over)</p>
+						<input class="option" list="Age">
+						<datalist id="Age">
+							<option value="Under 18">
+							<option value="18-20">
+							<option value="21 and Over">
+						</datalist>
+						
+						<p class="entry">How much are you looking to spend today? If nothing, put 0 (zero).</p>
+						<p>$<input type="text"></p>
+						
+						<p class="entry">What kind of activities would you like to do?</p>
+						<p class="ses">a</p> 
+						<input type="checkbox" id="choiceone">
+						<p class="ses">b</p> 
+						<input type="checkbox" id="choicetwo">
+						<p class="ses">c</p> 
+						<input type="checkbox" id="choicethree">
+						<p class="ses">d</p> 
+						<input type="checkbox" id="choicefour">
+				</div>
+		</body>
+</html>
