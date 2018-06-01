@@ -19,8 +19,8 @@
 						
 						<!-- First Entry /--> 
 						<p class="entry">Enter the city you would like to visit: (Rib Mountain, Rothschild, Weston, Scholfield, Wausau, All)</p>
-						<input class="option" list="City">
-						<datalist id="City">
+						<input class="option" list="city">
+						<datalist id="city">
 							<option value="All">
 							<option value="Rib Mountain">
 							<option value="Rothschild">
@@ -49,6 +49,11 @@
 						<input type="checkbox" id="choicethree">
 						<p class="ses">d</p> 
 						<input type="checkbox" id="choicefour">
+						
+						<p class="description">Press the button and scroll down to see your options.</p>
+						<button type="button" onclick="date()">See options today for you!</button>
+						<p id="events" class="events"></p>
+						<p id="citySelect"></p>
 				</div>
 		</body>
 </html>

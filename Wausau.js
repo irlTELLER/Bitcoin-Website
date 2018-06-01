@@ -1,32 +1,17 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function date() {
+	var event;
+	var time = new Date().getDay();
+		if (time === 0) {
+			event = "Nothing";
+		} else if (time <= 5 ) {
+			event = "Events"
+		} else {
+			event = "Who knows"
+		}
+	document.getElementById("events").innerHTML = event;
+	}
+
+function city() {
+	var citi = document.getElementById("city");
+	document.getElementById("citySelect").innerHTML = citi.innerHTML;
 }
-
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-function randomOne() {
-	document.getElementById("optionOne").innerHTML = Math.floor(Math.random() * 20) +1;
-}
-
-
-function variableOne(){
-	document.getElementById("optionOne").innerHTML = 2
-}
-
-

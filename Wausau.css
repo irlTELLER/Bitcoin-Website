@@ -127,5 +127,19 @@
 /* Web page Div (Removes horizontal scroll bar*/
 .web {
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: hidden;
+	background-color: gold;
+	padding: 5px 5px;
+	border: solid;
+	border-color: black;
+}
+
+/* Events Style */
+.events {
+	border: solid;
+	border-color: black;
+	padding: 5px 5px;
+	background-color:;
+	color:;
+	font-size: 115%;
 }
